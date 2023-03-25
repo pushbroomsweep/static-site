@@ -1,1 +1,84 @@
 site_name: My Docs
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to Dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Light mode
+  font:
+    text: Inter
+    code: Fira Code
+
+  features:
+    - content.code.copy
+    - content.code.annotate
+
+  # Icons can be changed here
+  # icon:
+  #   admonition:
+  #     note: fontawesome/solid/note-sticky
+  #     abstract: fontawesome/solid/book
+  #     info: fontawesome/solid/circle-info
+  #     tip: fontawesome/solid/bullhorn
+  #     success: fontawesome/solid/check
+  #     question: fontawesome/solid/circle-question
+  #     warning: fontawesome/solid/triangle-exclamation
+  #     failure: fontawesome/solid/bomb
+  #     danger: fontawesome/solid/skull
+  #     bug: fontawesome/solid/robot
+  #     example: fontawesome/solid/flask
+  #     quote: fontawesome/solid/quote-left
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - md_in_html
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
