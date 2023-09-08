@@ -46,6 +46,7 @@ theme:
 plugins:
   - search
   - tags
+  - mkdocs-jupyter
 
 markdown_extensions:
   - abbr
