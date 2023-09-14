@@ -1,2 +1,2 @@
 # static-site
-![](https://pushbroomsweep.github.io/static-site/)
+<https://pushbroomsweep.github.io/static-site/>
